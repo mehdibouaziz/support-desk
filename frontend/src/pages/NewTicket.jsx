@@ -37,7 +37,7 @@ const NewTicket = () => {
     }
 
     dispatch(reset());
-  }, [isError, isSuccess, dispatch, navigate, message]);
+  }, [isError, isSuccess, message, dispatch, navigate]);
 
   if (isLoading) {
     return <Spinner />;

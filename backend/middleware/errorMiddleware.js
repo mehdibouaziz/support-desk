@@ -1,5 +1,6 @@
 const errorHandler = (err, req, res, next) => {
-    const statusCode = res.statusCode ? res.statusCode : 500;
+    // Check the status code, if it is a good status code, send a bad one instead.
+    const statusCode = res.statusCode < 400 ? 500 : res.statusCode
     res.status(statusCode)
     res.json({
         message: err.message,
