@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <section className="heading">
         <h1>What do you need help with?</h1>
-        <p>Please choose from an option bellow</p>
+        <p>Please choose from an option below</p>
       </section>
       <Link to='/new-ticket' className="btn btn-reverse btn-block">
         <FaQuestionCircle /> Create New Ticket
