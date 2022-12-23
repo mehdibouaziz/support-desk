@@ -8,9 +8,10 @@ This is a support desk ticket fullstack app created with the MERN stack.
 ## HOW IT WORKS:
 - The backend handles user authentication, tickets and notes.
 - The user can register, login, create new support tickets, view his tickets, add a note to a ticket, close a ticket.
+- A guest account is avaible to try the app without having to register, via a button below the login and register forms.
 
 ## TO DO:
-- Add visitor account, and login as visitor shortcut.
-- Add staff functionalities.
-- Check CSS for small displays.
-- Add footer and social links.
+- [X] Add visitor account, and login as visitor shortcut.
+- [ ] Add staff functionalities.
+- [ ] Check CSS for small displays.
+- [ ] Add footer and social links.

@@ -26,6 +26,17 @@ const login  = async (userData) => {
     return response.data
 }
 
+// Guest user login
+const logGuest  = async () => {
+    const response = await axios.get(
+        `${API_URL}/login/guest`
+        )
+    if (response.data) {
+        localStorage.setItem('user', JSON.stringify(response.data))
+    }
+    return response.data
+}
+
 // Logout user
 const logout = () => {
     localStorage.removeItem('user')
@@ -34,7 +45,8 @@ const logout = () => {
 const authService = {
     register,
     logout,
-    login
+    login,
+    logGuest
 }
 
 export default authService

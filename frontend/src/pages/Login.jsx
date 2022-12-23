@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { FaSignInAlt } from "react-icons/fa";
 import { useSelector, useDispatch } from 'react-redux';
-import { login, reset } from '../features/auth/authSlice';
+import { login, logGuest, reset } from '../features/auth/authSlice';
 import Spinner from "../components/Spinner";
 
 const Login = () => {
@@ -42,8 +42,11 @@ const Login = () => {
       password
     }
     dispatch(login(userData))
-
   };
+  const onGuestLogin = (e) => {
+    e.preventDefault();
+    dispatch(logGuest())
+  }
 
   if(isLoading){return <Spinner />}
 
@@ -86,6 +89,9 @@ const Login = () => {
             <button className="btn btn-block">Submit</button>
           </div>
         </form>
+        <div className="form-group">
+            <button className="btn btn-block btn-reverse" onClick={onGuestLogin}>Login on Guest Account</button>
+          </div>
       </section>
     </>
   );
