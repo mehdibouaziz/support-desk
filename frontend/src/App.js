@@ -11,6 +11,7 @@ import PrivateRoute from './components/PrivateRoute'
 import NewTicket from './pages/NewTicket'
 import Tickets from './pages/Tickets'
 import Ticket from './pages/Ticket'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <Route path='/ticket/:ticketId' element={<Ticket />} />
             </Route>
           </Routes>
+          <Footer />
         </div>
         
       </Router>

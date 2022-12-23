@@ -355,6 +355,11 @@ footer {
   text-align: center;
 }
 
+.footer {
+  height: 1px;
+  margin-top: 60px;
+}
+
 .loadingSpinnerContainer {
   position: fixed;
   top: 0;
