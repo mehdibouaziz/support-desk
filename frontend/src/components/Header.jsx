@@ -21,11 +21,16 @@ const Header = () => {
         </div>
         <ul>
             {user ? (
-            <li>
-                <button className="btn" onClick={onLogout}>
-                    <FaSignOutAlt /> Logout
-                </button>
-            </li>
+            <>
+                <li>
+                    <FaUser style={{marginRight: '5px'}} /> {user.name}
+                </li>
+                <li>
+                    <button className="btn" onClick={onLogout}>
+                        <FaSignOutAlt /> Logout
+                    </button>
+                </li>
+            </>
             ) : (
             <>
                 <li>
