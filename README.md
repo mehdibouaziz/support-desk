@@ -13,5 +13,4 @@ This is a support desk ticket fullstack app created with the MERN stack.
 ## TO DO:
 - [X] Add visitor account, and login as visitor shortcut.
 - [ ] Add staff functionalities.
-- [ ] Check CSS for small displays.
-- [ ] Add footer and social links.
+- [X] Add footer and social links.
